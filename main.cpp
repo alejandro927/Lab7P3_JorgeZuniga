@@ -3,6 +3,7 @@
 #include <random>
 #include <ctime>
 #include <iomanip>
+#include "SombreroClasificador.h"
 #include "Mago.h"
 #include "MagoSlytherin.h"
 #include "MagoGryffindor.h"
@@ -101,15 +102,33 @@ vector<Mago*> crearMagos() {
 	return tempmago;
 }
 
-
+void imprimirMagosCasa(){
+	ClaseHogwarts* claseHg = new ClaseHogwarts();
+	cout<<"Slytherin"<<endl;
+	for(int i=0 ; i< claseHg->magos_slytherin.size() ; i++){
+		//cout<< claseHg->magos_slytherin;
+	}
+	cout<<"Ravenclaw"<<endl;
+	for(int i=0 ; i< claseHg->magos_ravenclaw.size() ; i++){
+	//	cout<< claseHg->magos_ravenclaw;
+	}
+	cout<<"Hufflepuff"<<endl;
+	for(int i=0 ; i< claseHg->magos_hufflepuff.size() ; i++){
+		//cout<< claseHg->magos_hufflepuff;
+	}
+	cout<<"Gryffindor"<<endl;
+	for(int i=0 ; i< claseHg->magos_gryffindor.size() ; i++){
+		//cout<< claseHg->magos_gryffindor;
+	}
+}
 
 
 int main(int argc, char** argv) {
 	vector <Mago*> listaMagos;
 	Mago* mag = new Mago();
 	listaMagos = crearMagos();
-
-
+	SombreroClasificador* sombrero = new SombreroClasificador();
+	ClaseHogwarts* claseH = new ClaseHogwarts(); 
 
 
 	int opcion=0;
@@ -122,8 +141,8 @@ int main(int argc, char** argv) {
 				opcionCasa = opcionCasa/100;
 				cout<<opcionCasa<<endl;
 				*/
-
-
+				//sombrero->clasificar_magos_nuevos(listaMagos, 10);
+				
 
 			}
 			break;
@@ -144,5 +163,6 @@ int main(int argc, char** argv) {
 
 	}
 	delete mag;
+	delete claseH;
 	return 0;
 }

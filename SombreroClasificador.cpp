@@ -3,21 +3,30 @@
 SombreroClasificador::SombreroClasificador() {
 }
 
-ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista,int valor=0) {
-
-	/*
-	// Dynamic_cast
-	int cant=0;
-	for(int i=0; i<lista.size(); i++) {
-
-		Buenos* bu = dynamic_cast<Buenos*>(lista[i]);
-		if(bu) {
-			cant++;
-			cout<<"Hay"<<cant<<"buenos"<<endl;
-		}
-	}
+ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista, int year) {
+	ClaseHogwarts* claseH = new ClaseHogwarts();
 	
-	// type_id
+	/*
+	for(int i=0; i<lista.size(); i++) {
+		
+        MagoSlytherin* magoS = dynamic_cast<MagoSlytherin*>(lista[i]);
+        MagoHufflepuff* magoH = dynamic_cast<MagoHufflepuff*>(lista[i]);
+        MagoRavenclaw* magoR = dynamic_cast<MagoRavenclaw*>(lista[i]);
+		MagoGryffindor* magoG = dynamic_cast<MagoGryffindor*>(lista[i]);
+		
+		if(magoG) {
+			claseH->magos_gryffindor.push_back(lista[i]);
+		}else if(magoS){
+			claseH->magos_slytherin.push_back(lista[i]);
+		}else if(magoR){
+			claseH->magos_ravenclaw.push_back(lista[i]);
+		}else if(magoH){
+			claseH->magos_hufflepuff.push_back(lista[i]);
+		}
+		
+	}
+
+
 	cout<<endl;
 	cout<<"type_id"<<endl;
 	cout<<endl;
@@ -27,11 +36,13 @@ ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista,int valor=0) {
 	}
 
 */
-
-
-
-
+	delete claseH;
+	return claseH;
+	
 }
+
+
+
 
 SombreroClasificador::~SombreroClasificador() {
 }

@@ -9,6 +9,7 @@ class MagoHufflepuff : public Mago
 	public:
 		MagoHufflepuff();
 		MagoHufflepuff(int,int,int,int,int);
+		virtual void toString();
 		~MagoHufflepuff();
 		int getPaciencia();
 	protected:

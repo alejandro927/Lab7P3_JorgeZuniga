@@ -11,6 +11,7 @@ class MagoGryffindor : public Mago
 		MagoGryffindor();
 		MagoGryffindor(int,int,int,int,int);
 		~MagoGryffindor();
+		virtual void toString();
 		int getAtrevimiento();
 	protected:
 		int atrevimiento;

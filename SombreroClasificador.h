@@ -2,7 +2,8 @@
 #define SOMBREROCLASIFICADOR_H
 #include<iostream>
 #include "ClaseHogwarts.h"
-
+#include <vector>
+using namespace std;
 class SombreroClasificador
 {
 	public:

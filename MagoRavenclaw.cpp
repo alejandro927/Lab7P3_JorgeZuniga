@@ -10,6 +10,10 @@ int MagoRavenclaw::getCreatividad(){
 	return this->creatividad;
 }
 
+void MagoRavenclaw::toString(){
+	cout<<"Astucia:"<<astucia<<" Inteligencia:" << inteligencia << " Lealtad:" << lealtad << "valentia:" << valentia << " Creatividad:" << this->creatividad; 
+}
+
 MagoRavenclaw::~MagoRavenclaw()
 {
 }

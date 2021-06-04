@@ -11,6 +11,9 @@ Mago::Mago(int astu,int inte,int leal,int valen ) {
 	this->valentia = valen;
 }
 
+void Mago::toString(){
+	
+}
 
 Mago::~Mago() {
 }

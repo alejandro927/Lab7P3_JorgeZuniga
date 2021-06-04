@@ -8,5 +8,10 @@ int MagoSlytherin::getLiderazgo(){
 	return this->liderazgo;
 }
 
+
+void MagoSlytherin::toString(){
+	cout<<"Astucia:"<<astucia<<" Inteligencia:" << inteligencia << " Lealtad:" << lealtad << "valentia:" << valentia << " Liderazgo:" << this->liderazgo; 
+}
+
 MagoSlytherin::~MagoSlytherin() {
 }

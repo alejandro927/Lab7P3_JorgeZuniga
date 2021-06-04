@@ -1,8 +1,10 @@
 #ifndef MAGO_H
 #define MAGO_H
+#include <string>
 #include <iostream>
 #include <random>
 #include <ctime>
+using namespace std;
 class Mago
 {
 	public:
@@ -22,7 +24,9 @@ class Mago
 		int getValentia();
 		void setValentia(int);
 		
+		virtual void toString();
 		
+			
 	protected:
 		int astucia;
 		int inteligencia;

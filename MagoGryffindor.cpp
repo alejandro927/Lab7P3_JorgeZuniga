@@ -9,6 +9,11 @@ int MagoGryffindor::getAtrevimiento(){
 	return this->atrevimiento;
 }
 
+void MagoGryffindor::toString(){
+
+	cout<< "Astucia:" << astucia<<" Inteligencia:" << inteligencia << " Lealtad:" << lealtad << "valentia:" << valentia << " Atrevimiento:" << this->atrevimiento; 
+}
+
 MagoGryffindor::~MagoGryffindor()
 {
 }

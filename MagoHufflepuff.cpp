@@ -8,5 +8,9 @@ int MagoHufflepuff::getPaciencia() {
 	return this->paciencia;
 }
 
+void MagoHufflepuff::toString(){
+	cout<<"Astucia:"<<astucia<<" Inteligencia:" << inteligencia << " Lealtad:" << lealtad << "valentia:" << valentia << " Paciencia:" << this->paciencia; 
+}
+
 MagoHufflepuff::~MagoHufflepuff() {
 }

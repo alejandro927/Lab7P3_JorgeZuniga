@@ -16,8 +16,6 @@ class ClaseHogwarts
 		ClaseHogwarts();
 		~ClaseHogwarts();
 		void promedio_habilidades_por_casa();
-		
-	protected:
 		int year;
 		vector <MagoSlytherin*> magos_slytherin;
 		vector <MagoHufflepuff*> magos_hufflepuff;
