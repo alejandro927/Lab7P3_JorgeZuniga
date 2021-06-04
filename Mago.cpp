@@ -1,7 +1,11 @@
 #include "Mago.h"
 
 Mago::Mago() {
-	
+	srand(time(NULL));
+	astucia = rand() % 100;
+	inteligencia = rand() % 100;
+	lealtad = rand() % 100;
+	valentia = rand() % 100;
 	
 	
 	

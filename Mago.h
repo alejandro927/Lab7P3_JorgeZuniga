@@ -1,6 +1,6 @@
 #ifndef MAGO_H
 #define MAGO_H
-#INCLUDE <IOSTREAM
+#include <iostream>
 #include <random>
 #include <ctime>
 class Mago
@@ -12,11 +12,11 @@ class Mago
 		int getAstucia();
 		void setAstucia(int);
 		
-		int getLealtad();
-		void setLealtad(int);
-		
 		int getInteligencia();
 		void setInteligencia(int);
+		
+		int getLealtad();
+		void setLealtad(int);
 		
 		int getValentia();
 		void setValentia(int);
