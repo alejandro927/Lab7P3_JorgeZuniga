@@ -1,10 +1,8 @@
 #include "MagoRavenclaw.h"
 
-MagoRavenclaw::MagoRavenclaw()
+MagoRavenclaw::MagoRavenclaw(int creat, int astu ,int intel, int leal , int valen): Mago(astu,intel,leal,valen)
 {
-	srand(time(NULL));
-	creatividad = rand() % 20;
-	creatividad = creatividad + 80;
+	creatividad = creat;
 	
 }
 

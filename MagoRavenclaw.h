@@ -4,10 +4,10 @@
 #include <ctime>
 #include "Mago.h"
 
-class MagoRavenclaw : protected Mago
+class MagoRavenclaw : public Mago
 {
 	public:
-		MagoRavenclaw();
+		MagoRavenclaw(int,int,int,int,int);
 		~MagoRavenclaw();
 		int getCreatividad();
 	protected:

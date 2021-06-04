@@ -5,10 +5,11 @@
 #include <ctime>
 #include "Mago.h"
 
-class MagoGryffindor : protected Mago
+class MagoGryffindor : public Mago
 {
 	public:
 		MagoGryffindor();
+		MagoGryffindor(int,int,int,int,int);
 		~MagoGryffindor();
 		int getAtrevimiento();
 	protected:

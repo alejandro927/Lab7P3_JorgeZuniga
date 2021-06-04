@@ -1,10 +1,8 @@
 #include "MagoGryffindor.h"
 
-MagoGryffindor::MagoGryffindor(){
-	srand(time(NULL));
-	atrevimiento = rand() % 20;
-	atrevimiento = atrevimiento + 80;
-	
+MagoGryffindor::MagoGryffindor(int atrev, int astu ,int intel, int leal , int vale ) : Mago(astu,intel,leal,vale)
+{
+	this->atrevimiento = atrev ;
 }
 
 int MagoGryffindor::getAtrevimiento(){

@@ -1,9 +1,7 @@
 #include "MagoSlytherin.h"
 
-MagoSlytherin::MagoSlytherin() {
-	srand(time(NULL));
-	liderazgo = rand() % 20;
-	liderazgo = liderazgo + 80;
+MagoSlytherin::MagoSlytherin(int lid, int astu ,int intel, int leal , int vale ) : Mago(astu,intel,leal,vale){
+	this->liderazgo = lid;
 }
 
 int MagoSlytherin::getLiderazgo(){

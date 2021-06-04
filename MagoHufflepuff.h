@@ -4,10 +4,11 @@
 #include <ctime>
 #include "Mago.h"
 
-class MagoHufflepuff : protected Mago
+class MagoHufflepuff : public Mago
 {
 	public:
 		MagoHufflepuff();
+		MagoHufflepuff(int,int,int,int,int);
 		~MagoHufflepuff();
 		int getPaciencia();
 	protected:

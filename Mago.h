@@ -7,6 +7,7 @@ class Mago
 {
 	public:
 		Mago();
+		Mago(int,int,int,int);
 		~Mago();
 		
 		int getAstucia();
