@@ -3,7 +3,7 @@
 SombreroClasificador::SombreroClasificador() {
 }
 
-ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista, int year) {
+void clasificar_magos_nuevos( vector<Mago*> lista, int year) {
 	ClaseHogwarts* claseH = new ClaseHogwarts();
 	
 	/*
@@ -25,7 +25,7 @@ ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista, int year) {
 		}
 		
 	}
-
+*/
 
 	cout<<endl;
 	cout<<"type_id"<<endl;
@@ -35,9 +35,8 @@ ClaseHogwarts* clasificar_magos_nuevos( vector<Mago*> lista, int year) {
 		cout<<tipo.name()<<endl;
 	}
 
-*/
+
 	delete claseH;
-	return claseH;
 	
 }
 

@@ -95,32 +95,36 @@ vector<Mago*> crearMagos() {
 			int atrevimiento = rand() % 20;
 			atrevimiento = atrevimiento + 80;
 			tempmago.push_back(new MagoGryffindor(atrevimiento,astucia,inteligencia,lealtad,valentia));
-			
+
 		}
 
 	}
 	return tempmago;
 }
 
-void imprimirMagosCasa(){
+void imprimirMagosCasa() {
 	ClaseHogwarts* claseHg = new ClaseHogwarts();
 	cout<<"Slytherin"<<endl;
-	for(int i=0 ; i< claseHg->magos_slytherin.size() ; i++){
+	for(int i=0 ; i< claseHg->magos_slytherin.size() ; i++) {
 		//cout<< claseHg->magos_slytherin;
+
 	}
 	cout<<"Ravenclaw"<<endl;
-	for(int i=0 ; i< claseHg->magos_ravenclaw.size() ; i++){
-	//	cout<< claseHg->magos_ravenclaw;
+	for(int i=0 ; i< claseHg->magos_ravenclaw.size() ; i++) {
+		//	cout<< claseHg->magos_ravenclaw;
 	}
 	cout<<"Hufflepuff"<<endl;
-	for(int i=0 ; i< claseHg->magos_hufflepuff.size() ; i++){
+	for(int i=0 ; i< claseHg->magos_hufflepuff.size() ; i++) {
 		//cout<< claseHg->magos_hufflepuff;
 	}
 	cout<<"Gryffindor"<<endl;
-	for(int i=0 ; i< claseHg->magos_gryffindor.size() ; i++){
+	for(int i=0 ; i< claseHg->magos_gryffindor.size() ; i++) {
 		//cout<< claseHg->magos_gryffindor;
 	}
+	delete claseHg;
 }
+
+
 
 
 int main(int argc, char** argv) {
@@ -128,7 +132,7 @@ int main(int argc, char** argv) {
 	Mago* mag = new Mago();
 	listaMagos = crearMagos();
 	SombreroClasificador* sombrero = new SombreroClasificador();
-	ClaseHogwarts* claseH = new ClaseHogwarts(); 
+	ClaseHogwarts* claseH = new ClaseHogwarts();
 
 
 	int opcion=0;
@@ -141,17 +145,18 @@ int main(int argc, char** argv) {
 				opcionCasa = opcionCasa/100;
 				cout<<opcionCasa<<endl;
 				*/
-				//sombrero->clasificar_magos_nuevos(listaMagos, 10);
-				
+				//sombrero->clasificar_magos_nuevos(listaMagos,1);
+
 
 			}
 			break;
 			case 2: {
-
+				cout<<"Imprime por casa"<<endl;
+				imprimirMagosCasa();
 			}
 			break;
 			case 3: {
-
+				cout<<"Imprime el promedio"<<endl;
 			}
 			break;
 			case 4: {
